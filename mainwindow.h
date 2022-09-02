@@ -15,11 +15,6 @@ public:
     MainWindow(QWidget *parent = nullptr);
     void region(const QPoint &currentGlobalPoint);
     ~MainWindow();
-protected:
-    //Mouse press, move and release events
-    void mousePressEvent(QMouseEvent *event);
-    void mouseMoveEvent(QMouseEvent *event);
-    void mouseReleaseEvent(QMouseEvent *event);
 
 private slots:
     void on_pushButton_clicked();
@@ -27,8 +22,5 @@ private slots:
     void on_pushButton_2_clicked();
 
 private:
-    Ui::MainWindow *ui;
-QPoint m_movePoint;  //Mouse position
-    bool isLeftPressDown;  // Determine whether the left button is pressed
-    Direction dir;   
+    Ui::MainWindow *ui; 
 #endif // MAINWINDOW_H
