@@ -15,7 +15,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::region(const QPoint &currentGlobalPoint)
+/*void MainWindow::region(const QPoint &currentGlobalPoint)
 {
     // Get the position area of ​​the form on the screen, topLeft is the upper corner point, rightButton is the lower right corner point
     QRect rect = this->rect();
@@ -23,7 +23,7 @@ void MainWindow::region(const QPoint &currentGlobalPoint)
     QPoint topLeft = this->mapToGlobal(rect.topLeft()); //Convert (0,0) in the upper left corner to global coordinates
     QPoint rightButton = this->mapToGlobal(rect.bottomRight());
 
-    int x = currentGlobalPoint.x(); //The coordinates of the current mouse
+    int x = currenGlobalPoint.x(); //The coordinates of the current mouse
     int y = currentGlobalPoint.y();
 
     if(((topLeft.x() + PADDING >= x) && (topLeft.x() <= x))
@@ -252,7 +252,7 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event)
             this->setCursor(QCursor(Qt::ArrowCursor));
         }
     }
-}
+}*/
 
 void MainWindow::on_pushButton_2_clicked()
 {
